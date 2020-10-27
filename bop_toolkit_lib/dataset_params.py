@@ -369,13 +369,13 @@ def get_split_params(datasets_path, dataset_name, split, split_type=None):
 
   elif dataset_name in ('s0', 's1', 's2', 's3'):
     if dataset_name == 's0' and split == 'test':
-      p['scene_ids'] = list(range(800))
+      p['scene_ids'] = list(range(1280))
     if dataset_name == 's1' and split == 'test':
-      p['scene_ids'] = []
+      p['scene_ids'] = list(range(1600))
     if dataset_name == 's2' and split == 'test':
-      p['scene_ids'] = list(range(600))
+      p['scene_ids'] = list(range(1000))
     if dataset_name == 's3' and split == 'test':
-      p['scene_ids'] = list(range(720))
+      p['scene_ids'] = list(range(1200))
 
     p['im_size'] = (640, 480)
 
